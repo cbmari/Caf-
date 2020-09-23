@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Projeto Final</title>
+  <link rel="stylesheet" href="JS/fontawesome/css/all.css">
+  <link rel="stylesheet" href="BOOT/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style1.css">
+</head>
+
+<body style="background-color:#D2B48C;">
+  <header class="topo">
+    <!--Menu--->
+    <section id="menu">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="Home.html"><img src="IMG/logocafe2.png" alt="logotipo" width="120px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse active" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="Home.html">Inicio<span class="sr-only">(Página atual)</span> </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="Sobre.html">Sobre </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contato.html">Contato</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Entrar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <button type="button" class="btn btn-link"> <a href="Cadastro.html"> Cadastar</a></button>
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modalExemplo"> <a
+                    href="">Login</a></button>
+                </button>
+              </div>
+            </li>
+          </ul>
+          </form>
+        </div>
+      </nav>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Faça Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Endereço de email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Seu email">
+                <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com
+                  ninguém.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Li e aceito os Termos de Uso.</label>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Entrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="Slides">
+      <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" id="Slide1">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="IMG/slide1.jpg?auto=yes&bg=777&fg=555&text=Primeiro Slide"
+                alt="Primeiro Slide">
+              <div class="carousel-caption d-none d-block">
+                <h2>Viva experiências incriveis</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="IMG/slide2.jpg?auto=yes&bg=666&fg=444&text=Segundo Slide"
+                alt="Segundo Slide">
+              <div class="carousel-caption d-none d-block">
+                <h2>Compartilhe com amigos</h2>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="IMG/slide3.jpg?auto=yes&bg=555&fg=333&text=Terceiro Slide"
+                alt="Terceiro Slide">
+              <div class="carousel-caption d-none d-block">
+                <h2>Tudo isso na companhia do melhor café!</h2>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div id="imagemtexto">
+        <div class="row p-5">
+          <div class="col-md-4">
+            <img src="IMG/cafetexto.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-8 p-2">
+            <h2>A IMPORTÂNCIA DO CAFÉ</h2>
+            <p>O Brasil é o maior produtor mundial de café. Desde sua chegada ao país, em 1727, o café foi o maior
+              gerador de riquezas e o produto mais importante da história nacional. Hoje, o café continua sendo um
+              importante gerador de divisas (US$ 2 bilhões anuais, ou 26 milhões de sacas exportadas ao ano),
+              contribuindo com mais de 2% do valor total das exportações brasileiras, e respondendo por mais de um terço
+              da produção mundial. Um mercado ainda em franca expansão, cujo agronegócio gera, no mundo todo, recursos
+              da ordem de 91 bilhões de dólares ao comercializar os 115 milhões de sacas que, em média, são produzidos.
+              A atividade envolve, ainda, meio bilhão de pessoas da produção ao consumo final (8% da população mundial).
+            </p>
+          </div>
+        </div>
+        <div class="row p-5">
+          <div class="col-md-8 p-2" id="imagemtexto2">
+            <h2>OS BENEFICÍOS DO CAFÉ</h2>
+            <p>O hábito de tomar café, desde que em doses moderadas (de 4 a 5 xícaras de 50 ml por dia), não oferece
+              riscos ao organismo, muito pelo contrário, proporciona diversos benefícios. Entre os motivos está sua
+              riqueza nutricional, com destaque não apenas para a cafeína, famosa por seu efeito estimulante, mas também
+              pela alta concentração de polifenóis – antioxidantes que impedem, ou ao menos diminuem, a ação dos
+              radicais livres, que prejudicam o equilíbrio celular.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="IMG/cafetexto1.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row p-5">
+          <div class="col-md-4">
+            <img src="IMG/cafetexto2.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-8 p-2">
+            <h2>NOSSO CAFÉ</h2>
+            <p>A COFFEEHOUSE tem o prazer de levar sabor e alegria para quem, assim como nós, é completamente apaixonado
+              por café. E é falando nisso que nasceu essa categoria: de cafés especiais. Aqui dentro você irá observar
+              outras três divisões: café moído, café em grãos torrados e em grãos crus. Todos os nossos cafés têm
+              rastreabilidade até a fazenda produtora, com diversas opções como torra média-clara e média, de diversas
+              regiões produtoras como Cerrado Mineiro, Sul de Minas, Mantiqueira de Minas, Mogiana, Matas de Minas,
+              Caparaó, Piatã, entre outras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div id="produtos">
+        <h1 style="background-color:#DAA520;">
+          <center>NOSSOS PRODUTOS</center>
+        </h1>
+        <div class="row">
+          <div class="col-md-3 quadro">
+            <figure class="hoverzoom">
+              <img src="IMG/cafepreto.jpg" alt="" class="img-fluid">
+            </figure>
+
+            <div class="texto-quadro">
+              <h3>PRETO</h3>
+              <p>O clássico cafézinho preto preparado da melhor maneira, com grãos selecionados, nosso café preto é
+                simplesmente o mais pedido na casa.</p>
+            </div>
+          </div>
+          <div class="col-md-3 quadro">
+            <figure class="hoverzoom">
+              <img src="IMG/expresso.jpg" alt="" class="img-fluid">
+            </figure>
+            <div class="texto-quadro">
+              <h3>EXPRESSO</h3>
+              <p>O nosso pretinho em dose dupla!</p>
+            </div>
+          </div>
+          <div class="col-md-3 quadro">
+            <figure class="hoverzoom">
+              <img src="IMG/arabe.webp" alt="" class="img-fluid">
+            </figure>
+            <div class="texto-quadro">
+              <h3>ÁRABE</h3>
+              <p>O árabe proporciona um sabor bem diferente, acrescentado de especiarias árabes o nosso café ganha um
+                incrivel sabor.</p>
+            </div>
+          </div>
+          <div class="col-md-3 quadro">
+            <figure class="hoverzoom">
+              <img src="IMG/caribenho.jpg" alt="" class="img-fluid">
+            </figure>
+            <div class="texto-quadro">
+              <h3>CARIBENHO</h3>
+              <p>Um café de gosto sem igual, adoçado com açucar mascavo e gotas de baunilha.</p>
+            </div>
+          </div>
+          <div class="col-md-3 quadro">
+            <figure class="hoverzoom">
+              <img src="IMG/machiato1.jpg" alt="" class="img-fluid">
+            </figure>
+            <div class="texto-quadro">
+              <h3>MACHIATTO</h3>
+              <p>Café com leite chantilly e caramelo!</p>
+            </div>
+          </div>
+          <div class="col-md-3 quadro">
+            <figure class="hoverzoom">
+              <img src="IMG/aoleite.jpg" alt="" class="img-fluid">
+            </figure>
+            <div class="texto-quadro">
+              <h3>AO LEITE</h3>
+              <p>Café e Leite, a melhor combinação para aqueles que preferem um gosto mais leve!</p>
+            </div>
+          </div>
+          <div class="col-md-3 quadro">
+            <figure class="hoverzoom">
+              <img src="IMG/capuccino.jpg" alt="" class="img-fluid">
+            </figure>
+            <div class="texto-quadro">
+              <h3>CAPPUCCINO</h3>
+              <p>Nosso capuccino composto de café, leite, canela em pó e creme chantili.</p>
+            </div>
+          </div>
+          <div class="col-md-3 quadro">
+            <figure class="hoverzoom">
+              <img src="IMG/capuccino.png" alt="" class="img-fluid">
+            </figure>
+            <div class="texto-quadro">
+              <h3>DA CASA</h3>
+              <p>O queridinho dos nossos clientes, preparado de maneira especial e com um gosto acentuado, nosso café da
+                casa leva um ingrediente secreto na preparação que vai te deixar com gostinho de quero mais!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <section class="container-fluid" id="lojas">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 style="background-color:#DAA520;">
+          CONHEÇA NOSSAS LOJAS
+        </h1>
+        <div class="imagemlojas" style="background-image:url(IMG/espaco3.jpg)" id="lojas">
+          Saiba Mais
+          <div class="texto-circulos">
+            <p>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">Saiba Mais</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" id="Junte">
+        <h1 style="background-color:#DAA520;">
+          JUNTE-SE A NÓS
+        </h1>
+        <div class="imagemlojas" style="background-image:url(IMG/espaco6.jpg)">
+          <div class="texto-circulos">
+            <p>
+              <button type="button" class="btn btn-primary"> <a href="Cadastro.html"> Cadastrar</a></button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--Lojas-->
+    <div class="collapse" id="collapseExample">
+      <div class="card-body" id="Cards">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="IMG/card1.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Loja 1</h5>
+                <p class="card-text">Nossa loja localizada, no bairro XXX. </p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo1">
+                  Ver no mapa
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="IMG/card2.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Loja 2</h5>
+                <p class="card-text">Nossa loja localizada, no bairro XXX.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo2">
+                  Ver no mapa
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="IMG/card3.jpg" height="191px" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Loja 3</h5>
+                <p class="card-text">Nossa loja localizada, no bairro XXX.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo3">
+                  Ver no mapa
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="IMG/card4.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Loja 4</h5>
+                <p class="card-text">Nossa loja localizada, no bairro XXX.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo3">
+                  Ver no mapa
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalExemplo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel1">Loja 1</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15925.21092402005!2d-38.49550353116218!3d-3.744084994910824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7488a18435fe1%3A0x7a3df49bed4ce98!2sBlend%20Coffee%20House!5e0!3m2!1spt-BR!2sbr!4v1572388778940!5m2!1spt-BR!2sbr"
+              width="450" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalExemplo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel2">Loja 2</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15925.21092402005!2d-38.49550353116218!3d-3.744084994910824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7488a18435fe1%3A0x7a3df49bed4ce98!2sBlend%20Coffee%20House!5e0!3m2!1spt-BR!2sbr!4v1572388778940!5m2!1spt-BR!2sbr"
+              width="450" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    <div class="modal fade" id="modalExemplo3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel3">Loja 3</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+          <div class="modal-body">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15925.21092402005!2d-38.49550353116218!3d-3.744084994910824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7488a18435fe1%3A0x7a3df49bed4ce98!2sBlend%20Coffee%20House!5e0!3m2!1spt-BR!2sbr!4v1572388778940!5m2!1spt-BR!2sbr"
+              width="450" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+    <section class="container" id="products">
+      <h1>Produtos mais pedidos</h1>
+      <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <img class="img-fluid" src="IMG/produto4.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-caption texto-circulos">
+                <h3><i class="fab fa-gratipay"></i></i></h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img class="img-fluid" src="IMG/produto2.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-caption texto-circulos">
+                <h3><i class="fab fa-gratipay"></i></i></h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img class="img-fluid" src="IMG/produto3.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-caption texto-circulos">
+                <h3><i class="fab fa-gratipay"></i></i></h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img class="img-fluid" src="IMG/produto4.jpeg" alt="Card image cap">
+              </div>
+              <div class="carousel-caption texto-circulos">
+                <h3><i class="fab fa-gratipay"></i></i></h3>
+              </div>
+            </div>
+          </div>
+    </section>
+    <footer class="page-footer font-small unique-color-dark container-fluid" width="100%">
+
+      <div style="background-color: #D2B48C;">
+        <div class="container">
+
+          <div class="row py-4 d-flex align-items-center">
+
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">&copyCOFFEEHOUSE</h6>
+            </div>
+
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+              </a>
+              <a class="tw-ic">
+                <i class="fab fa-twitter white-text mr-4"> </i>
+              </a>
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g white-text mr-4"> </i>
+              </a>
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in white-text mr-4"> </i>
+              </a>
+              <a class="ins-ic">
+                <i class="fab fa-instagram white-text"> </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="JS/jquery.js"></script>
+    <script type="text/javascript" src="BOOT/js/bootstrap.min.js"></script>
+</body>
+
+</html>
